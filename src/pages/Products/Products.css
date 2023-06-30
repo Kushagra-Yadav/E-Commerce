@@ -1,0 +1,10 @@
+.wrap{
+    position:absolute;
+    background:#e0eaffd6;
+}
+.wrap>div{
+    display: flex;
+
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}

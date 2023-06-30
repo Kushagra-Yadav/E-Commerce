@@ -1,0 +1,96 @@
+.complete{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:4rem;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    background-color:rgba(178, 213, 235, 0.33);
+    max-width: 30rem;
+    max-height: 10rem;
+}
+.left>img{
+    width:8rem;
+    height: 9rem;
+    object-fit: contain;
+}
+.left>div:nth-of-type(1){
+font-weight:400;
+font-size: large;
+}
+.left>div:nth-of-type(2)>span{
+    font-weight:400;
+font-size:large;
+
+}
+.left>div:nth-of-type(2){
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+.left>div:nth-of-type(2)>button{
+    width:6rem;
+    height: 2rem;
+    background:#9bc3ec;
+    border-radius: 8px;
+    border-width: 0px;
+}
+.btns>button{
+    width:1.5rem;
+    height:1.5rem;
+    border-radius: 5px;
+    border-width: 0px;
+    justify-content: space-around;
+}
+.btns>button:active{
+transform: rotate(180deg);
+}
+.btns>span{
+    font-size: large;
+    font-weight: 500;
+}
+.btns{
+    display: flex;
+    gap:0.4rem;
+    
+  
+}
+.btns>button{
+    font-size: large;
+    font-weight: 500;
+}
+.left>div:nth-of-type(2)>button:hover{
+    background:#79aee3e8;
+    cursor: pointer;
+}
+.cart-right{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    flex: 1 1;
+    padding: 2rem 2rem;
+    gap:1rem;
+    margin: 1rem 1rem;
+    background-color:#213d9270;
+}
+.cart-right>div{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.cart-right>div:nth-of-type(1){
+   align-self: center;
+   font-size:2rem;
+   font-weight:600;
+}
+.cart-right>div>span{
+    font-size: large;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
