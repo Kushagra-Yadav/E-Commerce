@@ -28,12 +28,16 @@ const Cart=()=>{
             }
             </div>
             <div className="cart-right">
-                {cart.length>0 &&(<>
+                {cart.length>0?(<>
                 <div>Product Details</div>
                 <div><span>Shipping Charges</span> <span>${shipping_charges}</span></div>
                 <div><span>Total quantity</span><span>{count}</span></div>
                 <div className="pricings"><span>Total Price</span><span>${Math.round(total,2)+shipping_charges}</span></div>
-           </>)}
+           </>):(<>
+            <div style={{fontFamily:"sans-serif"}}>Cart is Empty</div>
+            <div style={{display:"flex",justifyContent:"center"}}>
+            <span>Add something to cart </span><span style={{marginLeft:"5px" }}><Link to="/" style={{color:"blue"}}>Home</Link></span>
+                </div></>)}
             </div>
         </div>
     )
